@@ -10,7 +10,6 @@ body {
     color: #111;
 }
 
-/* Header */
 .header {
     height: 60px;
     border-bottom: 1px solid #e5e5e5;
@@ -19,13 +18,11 @@ body {
     padding: 0 24px;
 }
 
-/* Layout */
 .wrapper {
     display: flex;
     min-height: calc(100vh - 120px);
 }
 
-/* Sidebar */
 .sidebar {
     width: 200px;
     border-right: 1px solid #e5e5e5;
@@ -43,7 +40,6 @@ body {
     color: #000;
 }
 
-/* Main content */
 .main {
     flex: 1;
     padding: 40px;
@@ -53,7 +49,6 @@ body {
     margin-bottom: 12px;
 }
 
-/* Footer */
 .footer {
     height: 60px;
     border-top: 1px solid #e5e5e5;
