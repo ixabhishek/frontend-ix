@@ -23,7 +23,7 @@ body {
 .header {
     grid-column: 1 / -1; 
     border-bottom: 1px solid #e5e5e5;
-    display: flex;
+    display: grid;
     align-items: center;
     padding: 0 24px;
 }
@@ -49,13 +49,13 @@ body {
 }
 
 .main h2 {
-    margin-bottom: 12px;
+    margin-bottom: 1px;
 }
 
 .footer {
-    grid-column: 1 / -1; /* spans full width */
+    grid-column: 1 / -1; 
     border-top: 1px solid #e5e5e5;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     color: #666;
