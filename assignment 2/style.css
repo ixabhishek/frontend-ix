@@ -1,296 +1,91 @@
-body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0; 
-    padding: 0;
-}
-
-
-.top_half{
-    background-color: rgba(229, 234, 236);
-    width: auto;
-    height: 716px;
-    position: relative; 
-    overflow: visible;   
-    padding-bottom: 20px;
-}
-
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-nav{
-    display: flex;
+header{
+    background-image: linear-gradient(rgba(161, 189, 186, 0.703), rgba(207, 243, 239, 0.703)),url('assests 1/assests/HeaderBack.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    top:0;
+    left:0;
+    right:0;
+    margin:none;
+    display:flex;
     justify-content: space-between;
-    
+    height:400px;
 }
-
-nav .left{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items:last baseline baseline;
-    margin-top: 100px;
-    padding-left: 30px;
-   
-    
+header .header-left .top {
+    display: flex-start;
+    justify-content: flex-start;
+    padding:20px;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-nav .left img{
-    height : 70px;
+header .header-left .tagline{
+    padding:50px;
+}
+header .header-left .tagline p{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    margin:0;
+    font-family: sans-serif;
+}
+header .header-left .tagline .word1{
+    color: rgb(68, 132, 87);
+}
+header .header-left .tagline .word4{
+    color: rgba(70, 120, 137, 0.815);
+}
+header .header-left .top img {
     width: auto;
-}
-
-.left > *:not(:first-child){
-    border-left: 1px solid black;
-    padding-left: 25px;
-    padding-right: 1px;
-}
-
-.DoE_logo,
-.ADQ {
-    display: grid;
-    grid-template-rows: auto auto; 
-    justify-items: center;         
-    row-gap: 8px;                  
-}
-
-.DoE_logo span,
-.ADQ span {
-    font-size: 10px;               
-    font-weight: 600;
-}
-
-
-
-
-nav .right {
-    position: relative;
-    width: 700px;
-    
-}
-
-
-nav .right .header_front img {
-    width: 100%;
-    height: auto;
-    overflow: visible;
-}
-
-nav .right .header_back img{
-    width: 1000px;
-}
-
-nav .right .header_front {
-    position: absolute;
-    top: 0;
-    left: 40px;
-    width: 100%;
-    z-index: 2;
-    
-}
-
-nav .right .header_back {
-    opacity: 0.2;
-    z-index: 1;
-    position: absolute;
-    top: -30px;
-    left: -260px;
-    width: 100%;
-}
-
-
-
-.header_text {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    gap: 3px;                 
-    margin-top: 100px;
-    padding-left: 30px;
-}
-
-.header_text h1 {
-    margin: 0;             
-    font-weight: bold;      
-    line-height: 1.1;       
-}
-
-
-.line_1 h1 {
-    font-size: 85px;
-    color: rgb(76 141 83);
-}
-
-.line_2 h1 {
-    font-size: 85px 
-}
-
-.line_3 h1{
-    font-size: 85px;
-}
-
-.line_3 .tagline{
-    color: rgb(115 159 188);
-}
-
-
-
-
-.random_text{
-    margin-top: 100px;
-    padding-left: 40px;
-    font-size: 20px;
-    padding-right: 60px;
-}
-
-
-
-.sup_by{
-    padding-left: 55px;
-    margin-top: 20px;
-   color: rgba(108, 147, 165);
-   font-weight: 1000;
-   display: flex;
-   justify-content: center;
-}
-
-
-
-
-.first_row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items:last baseline baseline;
-    margin-top: 20px;
-    padding-left: 30px;
-   margin-bottom: 40px;
-    
-}
-
-.first_row img{
-    height : 100px;
-    width: auto;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.first_row > *:not(:first-child){
-    border-left: 1px solid black;
-    padding-left: 25px;
-    padding-right: 1px;
-}
-@media (max-width: 1300px) {
- 
- 
-  body {
-    overflow-x: hidden;
-  }
- 
-  .top_half {
-    height: auto;
-    padding-bottom: 40px;
-  }
- 
- 
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
- 
-  nav .left {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-    padding-left: 0;
-    gap: 15px;
-  }
- 
-  nav .left img {
     height: 50px;
-  }
- 
-  .left > *:not(:first-child) {
-    border-left: none;
-    padding-left: 0;
-  }
- 
-  .DoE_logo span,
-  .ADQ span {
-    font-size: 9px;
+    padding:10px;
+    border-right: 1px solid black;
+}
+header .header-right img {
+    width: auto;
+    height: 450px;
+
+}
+
+main{
+    padding: 20px 50px;
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight:500;
+}
+footer{
     text-align: center;
-  }
- 
- 
-  nav .right {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
- 
-  nav .right .header_front {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 90%;
-    margin: 0 auto;
-  }
- 
-  nav .right .header_back {
-    display: none; /* hide background ting for mobiel*/
-  }
- 
- 
-  .header_text {
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    align-items: center;
-    text-align: center;
-  }
- 
-  .line_1 h1,
-  .line_2 h1,
-  .line_3 h1 {
-    font-size: 42px;
-    line-height: 1.1;
-  }
- 
- 
-  .random_text {
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 16px;
-    text-align: justify;
-  }
- 
- 
-  .sup_by {
-    padding-left: 0;
-    margin-top: 30px;
-    font-size: 14px;
-  }
- 
- 
-  .first_row {
+    justify-content: center;
+    font-family:sans-serif;
+    color:rgba(70, 120, 137, 0.815);
+    font-weight: bold;
+    padding:10px;
+    padding-bottom:25px;
+}
+footer p{
+    padding-bottom:10px;
+}
+footer .supportedby{
+    display:flex;
+    justify-content: center;
+}
+footer .partners{
+    display:flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    padding-left: 0;
-    margin-bottom: 20px;
-  }
- 
-  .first_row img {
-    height: 70px;
-  }
- 
-  .first_row > *:not(:first-child) {
-    border-left: none;
-    padding-left: 0;
-  }
+    gap: 20px;
+}
+footer img {
+    width: auto;
+    height: 40px;
+    display: block;
+    margin:none;
+    padding: 40px;
+    padding-top:0;
+    padding-bottom:0px;
+    border-right: 1px solid black;
+}
+footer img:last-child{
+    border-right: none;
 }
